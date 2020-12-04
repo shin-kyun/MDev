@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    android:padding="30dp"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/audiowide"
+        android:text="BMI Calculator"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Enter your weight(kg):" />
+
+    <EditText
+        android:id="@+id/Weight"
+        android:layout_width="270dp"
+        android:layout_height="45dp"
+        android:padding="12dp"
+        android:textAlignment="center"
+        android:background="@drawable/corner_bg"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Enter your height(cm):" />
+
+    <EditText
+        android:id="@+id/Height"
+        android:layout_width="270dp"
+        android:layout_height="45dp"
+        android:padding="12dp"
+        android:textAlignment="center"
+        android:background="@drawable/corner_bg"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/Calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:text="SEE RESULT"
+        app:backgroundTint="@android:color/holo_blue_light"
+        app:strokeColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/Result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aclonica"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/black"
+        android:fontFamily="monospace"
+        android:textAlignment="center"
+        android:textSize="21sp"/>
+
+
+</LinearLayout>
